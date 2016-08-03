@@ -125,6 +125,7 @@ if(MSVC)
       "NOMINMAX"
       "WIN32_LEAN_AND_MEAN"
       "_UNICODE"
+      "UNICODE"
   )
 endif()
 
