@@ -124,6 +124,7 @@ if(MSVC)
       "_CRT_SECURE_NO_WARNINGS"
       "NOMINMAX"
       "WIN32_LEAN_AND_MEAN"
+      "_UNICODE"
   )
 endif()
 
