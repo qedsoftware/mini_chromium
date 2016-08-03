@@ -31,18 +31,20 @@ environment:
       CONFIG: Debug
 
     ###
-    - TOOLCHAIN: "vs-10-2010"
-      CONFIG: Release
+    # Lack of C++11: https://ci.appveyor.com/project/ruslo/mini-chromium/build/1.0.4/job/bk1kmjleklyi2are
+    # - TOOLCHAIN: "vs-10-2010"
+    #   CONFIG: Release
 
-    - TOOLCHAIN: "vs-10-2010"
-      CONFIG: Debug
+    # - TOOLCHAIN: "vs-10-2010"
+    #   CONFIG: Debug
 
     ###
-    - TOOLCHAIN: "vs-11-2012"
-      CONFIG: Release
+    # Lack of C++11: https://ci.appveyor.com/project/ruslo/mini-chromium/build/1.0.4/job/557ohih1r41hhc7y
+    # - TOOLCHAIN: "vs-11-2012"
+    #   CONFIG: Release
 
-    - TOOLCHAIN: "vs-11-2012"
-      CONFIG: Debug
+    # - TOOLCHAIN: "vs-11-2012"
+    #   CONFIG: Debug
 
     ###
     - TOOLCHAIN: "vs-12-2013-win64"
@@ -73,18 +75,20 @@ environment:
       CONFIG: Debug
 
     ###
-    - TOOLCHAIN: "vs-9-2008"
-      CONFIG: Release
+    # Lack of C++11: https://ci.appveyor.com/project/ruslo/mini-chromium/build/1.0.4/job/8ny16evggwqvjn19
+    # - TOOLCHAIN: "vs-9-2008"
+    #   CONFIG: Release
 
-    - TOOLCHAIN: "vs-9-2008"
-      CONFIG: Debug
+    # - TOOLCHAIN: "vs-9-2008"
+    #   CONFIG: Debug
 
     ###
-    - TOOLCHAIN: "mingw"
-      CONFIG: Release
+    # FIXME: base\memory\aligned_memory.cc:30:43: error: 'posix_memalign' was not declared in this scope
+    # - TOOLCHAIN: "mingw"
+    #   CONFIG: Release
 
-    - TOOLCHAIN: "mingw"
-      CONFIG: Debug
+    # - TOOLCHAIN: "mingw"
+    #   CONFIG: Debug
 
 install:
   # Python 3
