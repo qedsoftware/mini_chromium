@@ -136,6 +136,10 @@ endif()
 
 if(APPLE)
   target_link_libraries(base PUBLIC "-framework CoreFoundation")
+  target_link_libraries(base PUBLIC "-framework CoreGraphics")
+  target_link_libraries(base PUBLIC "-framework CoreText")
+  target_link_libraries(base PUBLIC "-framework Foundation")
+  target_link_libraries(base PUBLIC "-framework Security")
 endif()
 
 ####
