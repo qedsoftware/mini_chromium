@@ -134,6 +134,10 @@ if(is_linux)
   target_compile_definitions(base PUBLIC "_FILE_OFFSET_BITS=64")
 endif()
 
+if(APPLE)
+  target_link_libraries(base PUBLIC "-framework CoreFoundation")
+endif()
+
 ####
 # Installation (https://github.com/forexample/package-example)
 
